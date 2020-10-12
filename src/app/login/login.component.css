@@ -1,0 +1,51 @@
+/* :host {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0px;
+      }
+ */
+ .login-blk{
+    /* background: #DE6262;   */
+    /* fallback for old browsers */
+ background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   position:absolute; 
+    height:100%; 
+    width:100%;
+     padding : 100px 0;
+ 
+
+ }
+ 
+ .banner{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  
+  no-repeat left bottom; background-size:cover;
+   min-height:500px; 
+   border-radius: 0 10px 10px 0; 
+   padding:0;}
+ .container{
+     background:#fff; 
+     border-radius: 11px;
+      box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+ .login{
+     padding: 52px 31px; 
+     position:relative;
+    }
+  h2{margin-bottom:30px;
+     font-weight:802; 
+     font-size:29px; 
+     color: #DE6262;
+    }
+ h2:after{content:" ";
+     width:100px; height:5px;
+      background:#FEB58A;
+       display:block; 
+      margin-top:21px;
+       border-radius:4px; 
+      margin-left:auto;
+      margin-right:auto
+    }
+ .btn-login{
+     background: #DE6262;
+     color:#fff;
+      font-weight:600;
+    }
+ 

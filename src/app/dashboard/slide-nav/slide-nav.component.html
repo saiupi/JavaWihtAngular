@@ -1,0 +1,85 @@
+<div class="  border-right" id="sidebar-wrapper">
+  <div class="sidebar text-light" align="center">Ojas</div><br><br>
+
+  <div class="list-group list-group-flush">
+
+    <div class="wrapper">
+      <aside class="main_sidebar">
+
+        <div>
+          <div id="bhover" [class.button-open]="!slideOpen" [class.button-close]="slideOpen" (click)="changeSlide()"
+            data-toggle="collapse" href="#collapseReports" role="button" aria-expanded="false"
+            aria-controls="collapseExample" class="text-light">
+            <a data-toggle="collapse" href="#collapseReports" role="button" aria-expanded="false"
+              aria-controls="collapseExample"><i class="fa fa-id-card text-secondary" aria-hidden="true"></i> Telugu medium
+              <span class="fa fa-chevron-down text-light float-right" [class.clicked]="slideOpen"></span></a>
+          </div>
+          <ul class="collapse" id="collapseReports">
+            <li [routerLink]="['allEmployees']">
+              <h6>1st Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>2nd Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>3rd Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>4th Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>5th Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>6th Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>7th Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>8th Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>9th Class</h6>
+            </li>
+            <li [routerLink]="['allEmployees']">
+              <h6>10th Class</h6>
+            </li>
+          </ul>
+        </div>
+        <div><br>
+
+          <div id="bhover" [class.button-open]="!slideDown" [class.button-close]="slideDown" (click)="changedown()"
+            data-toggle="collapse" href="#collapseAdmin" role="button" aria-expanded="false"
+            aria-controls="collapseExample" class="text-light">
+            <a><i class="fa fa-user-circle text-secondary" aria-hidden="true"></i> English Medium <span
+                class="fa fa-chevron-down text-light float-right" [class.clicked]="slideDown"></span></a>
+          </div>
+          <ul class="collapse" id="collapseAdmin">
+            <li [routerLink]="['clients']">
+              <h6> 1st Class</h6>
+            </li>
+            <li [routerLink]="['assignments']">
+              <h6> 2nd Class</h6>
+            </li>
+            <li [routerLink]="['employees']">
+              <h6> 3rd Class</h6>
+            </li>
+            <li [routerLink]="['assignmentClient']">
+              <h6> 4th Class</h6>
+            </li>
+            <li [routerLink]="['assignmentEmployee']">
+              <h6> 5th Class</h6>
+            </li>
+          </ul>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</div>
+<!-- <div [class.button-open]="!slideOpen" [class.button-close]="slideOpen" (click)="changeSlide()">
+  <i class="fa fa-chevron-down text-info" [class.clicked]="slideOpen"></i>
+</div> -->

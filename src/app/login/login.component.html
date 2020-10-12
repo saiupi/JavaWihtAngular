@@ -1,0 +1,73 @@
+<!-- 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 justify-content-center">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <div class="card rounded shadow shadow-sm">
+                            <div class="card-header">
+                                <h3 class="mb-0">Login</h3>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="uname">Username</label>
+                                        <input type="text" class="form-control form-control-lg rounded-2" name="uname"
+                                            id="uname" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control form-control-lg rounded-2" id="pswd"
+                                            required="" autocomplete="new-password">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg float-right"
+                                        id="btnLogin">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     -->
+
+<!------ Include the above in your HEAD tag ---------->
+<section class="login-blk">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 login">
+                <h2 class="text-center">Login Now</h2>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                   
+                    
+                    <div class="form-group">
+                        <label>Album_id</label>
+                        <input type="text" formControlName="Album_id" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Album_id.errors }" />
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>album_name</label>
+                        <input type="text" formControlName="album_name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.album_name.errors }" />
+                      
+                    </div>
+                    <div class="form-group">
+                        <label>year</label>
+                        <input type="text" formControlName="year" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.year.errors }" />
+                        
+                    </div>
+                   
+                    <div class="form-group">
+                        <button class="btn btn-primary">Login</button>&nbsp;
+                        <button class="btn btn-secondary" (click)="goToRegister()">Register</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 banner">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

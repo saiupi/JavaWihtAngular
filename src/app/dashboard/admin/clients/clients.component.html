@@ -1,0 +1,78 @@
+<div class="card shadow bg-white rounded" style="margin-top: 20px;">
+    <h5 class="card-header text-success">Add/View Clients</h5>
+    <div class="card-body  ">
+        <form>
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-4 col-xl-4 ">
+
+                    <!-- <span class="has-float-label">
+                        <input class="form-control" id="first" type="text" placeholder="name"/>
+                        <label for="client">client name</label>
+                        
+                      </span> -->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user-circle"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Client name" id="usr" name="username">
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-4 col-xl-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user-circle"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Client code" id="usr" name="username">
+                    </div>
+                </div>
+            </div><br>
+            <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary">Cancel</button>
+        </form>
+    </div>
+</div><br>
+
+<div class="card shadow bg-white rounded">
+    <h5 class="card-header bg-secondary text-light">Clients list</h5>
+    <div class="card-body ">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered ">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Client Code</th>
+                        <th scope="col">Client Name</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>k260</td>
+                        <td>mahe</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>k260</td>
+                        <td>navee</td>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>k260</td>
+                        <td>sai</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <pagination-controls (pageChange)="p = $event" class="pagination pg-blue justify-content-end ">
+    </pagination-controls>
+
+</div>
